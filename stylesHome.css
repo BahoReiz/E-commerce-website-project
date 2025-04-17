@@ -1,0 +1,90 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px 15px 20px;
+  background-color: #86C232;
+  border-radius: 15px;
+}
+
+.searchBarBack{
+  display: flex;
+  justify-content: flex-start;
+  width: 550px;
+  padding: 10px;
+  margin-right: 200px;
+}
+
+.searchBar{
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 20px;
+  border: 2px solid bisque;
+}
+
+.homeButton{
+  display: flex;
+  align-items: center;
+  width: 150px;
+  border-radius: 25px;
+}
+
+.icons{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-right: px;
+}
+
+.wishlistButton{
+ display: flex;
+ align-items: center;
+ width: 50px;
+ border-radius: 50px; 
+}
+
+.cartButton{
+  display: flex;
+  align-items: center;
+  width: 50px;
+  border-radius: 50px;
+}
+
+.secondPart{
+  display: flex;
+  padding: 50px 20px 15px ;
+  gap: 30px;
+}
+
+.first-column{
+  flex: 1;
+  background-color: #f3f3f3;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.second-column{
+  flex: 2;
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill), minmax(350px, 1fr);
+  gap: 10px;
+  margin: 15px;
+}
+
+.productCard {
+  background-color: #eaeaea;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: bold;
+}
