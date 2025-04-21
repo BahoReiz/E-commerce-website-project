@@ -1,0 +1,61 @@
+.container {
+  max-width: 1700px;
+  margin: auto;
+  padding: 20px 20px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px 15px 20px;
+    background-color: #86C232;
+    border-radius: 15px;
+  }
+  
+  .searchBarBack{
+    display: flex;
+    justify-content: flex-start;
+    width: 550px;
+    padding: 10px;
+  }
+  
+  .searchBar{
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 20px;
+    border: 2px solid bisque;
+  }
+  
+  .homeButton{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    border-radius: 25px;
+  }
+  
+  .icons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 20px;
+  }
+  
+  .position-relative {
+    position: relative;
+  }
+  
+  .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 50%;
+    font-weight: bold;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+  }
