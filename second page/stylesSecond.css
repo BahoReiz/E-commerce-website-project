@@ -60,6 +60,10 @@
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
   }
 
+  .card-img-top {
+    border-bottom: 1px solid #eee;
+  }
+  
   .thumb-img {
     width: 60px;
     height: 60px;
