@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="navbar d-flex justify-content-between align-items-center p-3">
+        <div>
+            <a href="">
+                <img class="homeButton" src="/images/bee-8355726_1280.jpg" alt="imgBee" style="width: 150px; height: auto;">
+            </a>
+        </div>
+        <div class="searchBarBack">
+            <input class="searchBar" type="text" placeholder="Search...">
+        </div>
+        <div class="icons d-flex gap-3">
+            <div class="position-relative">
+                <button type="button" class="btn btn-light border rounded-circle p-2 shadow-sm">
+                    <i class="bi bi-heart fs-4 text-danger"></i>
+                </button>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    2
+                </span>
+            </div>
+            <div class="position-relative">
+                <button type="button" class="btn btn-light border rounded-circle p-2 shadow-sm">
+                    <i class="bi bi-cart fs-4 text-primary"></i>
+                </button>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                    5
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <h2 class="mb-4">Your Cart</h2>
+        <p>There are <span id="product-count">2</span> products in your cart</p>
+        
+        <div class="row">
+          <div class="col-lg-9">
+            <table class="table table-bordered align-middle">
+              <thead class="table-light text-center">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Product</th>
+                  <th scope="col">Title</th>
+                  <th scope="col">Unit Price</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Subtotal</th>
+                  <th scope="col">Refresh</th>
+                  <th scope="col">Remove</th>
+                </tr>
+              </thead>
+              <tbody id="cart-items">
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td><img src="https://via.placeholder.com/80" class="img-fluid" alt="Chocolate Bread"></td>
+                  <td>Chocolate Bread</td>
+                  <td class="unit-price">15.99</td>
+                  <td><input type="number" class="form-control quantity" value="1" min="1"></td>
+                  <td class="subtotal">15.99</td>
+                  <td class="text-center"><i class="bi bi-arrow-clockwise refresh-btn cursor-pointer"></i></td>
+                  <td class="text-center"><i class="bi bi-trash remove-btn cursor-pointer text-danger"></i></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td><img src="https://via.placeholder.com/80" class="img-fluid" alt="Croissant"></td>
+                  <td>Croissant</td>
+                  <td class="unit-price">12.49</td>
+                  <td><input type="number" class="form-control quantity" value="2" min="1"></td>
+                  <td class="subtotal">24.98</td>
+                  <td class="text-center"><i class="bi bi-arrow-clockwise refresh-btn cursor-pointer"></i></td>
+                  <td class="text-center"><i class="bi bi-trash remove-btn cursor-pointer text-danger"></i></td>
+                </tr>
+              </tbody>
+            </table>
+    
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-outline-success"><i class="bi bi-arrow-left"></i> Continue Shopping</a>
+              <button class="btn btn-success"><i class="bi bi-arrow-repeat"></i> Update Cart</button>
+            </div>
+          </div>
+    
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Cart Summary</h5>
+                <p class="d-flex justify-content-between">
+                  <span>Subtotal</span>
+                  <span id="summary-subtotal">$40.97</span>
+                </p>
+                <p class="d-flex justify-content-between">
+                  <span>Shipping</span>
+                  <span>Free</span>
+                </p>
+                <hr>
+                <p class="d-flex justify-content-between fw-bold">
+                  <span>Total</span>
+                  <span id="summary-total">$40.97</span>
+                </p>
+                <button class="btn btn-primary w-100">Proceed To Checkout <i class="bi bi-box-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="scriptCart.js"></script>
+    </div>   
+</body>
+</html>
